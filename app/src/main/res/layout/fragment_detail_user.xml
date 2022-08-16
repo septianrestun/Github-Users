@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.DetailUserFragment">
+
+        <ImageView
+            android:id="@+id/imgDetUser"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:src="@tools:sample/avatars"
+            android:contentDescription="@string/detai_user_picture" />
+
+        <TextView
+            android:id="@+id/tvDetName"
+            style="@style/Det_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/DetailName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgDetUser"
+            app:layout_constraintTop_toTopOf="@+id/imgDetUser" />
+
+        <TextView
+            android:id="@+id/tvDetUsername"
+            style="@style/Detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/DetailUsername"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgDetUser"
+            app:layout_constraintTop_toBottomOf="@+id/tvDetName" />
+
+        <TextView
+            android:id="@+id/lblFollowers"
+            style="@style/Detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/DetailFollowers"
+            app:layout_constraintEnd_toEndOf="@+id/tvDetUsername"
+            app:layout_constraintStart_toStartOf="@+id/tvDetUsername"
+            app:layout_constraintTop_toBottomOf="@+id/tvDetUsername" />
+
+        <TextView
+            android:id="@+id/lblFollowing"
+            style="@style/Detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/DetailFollowing"
+            app:layout_constraintEnd_toStartOf="@+id/lblFollowers"
+            app:layout_constraintStart_toEndOf="@+id/imgDetUser"
+            app:layout_constraintTop_toTopOf="@+id/lblFollowers" />
+
+    <TextView
+        android:id="@+id/lblRepository"
+        style="@style/Detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/DetailRepository"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblFollowers"
+        app:layout_constraintTop_toTopOf="@+id/lblFollowers" />
+
+        <TextView
+            android:id="@+id/tvDetFollowing"
+            style="@style/nomor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/jmlFollowing"
+            app:layout_constraintEnd_toStartOf="@+id/tvDetFollowers"
+            app:layout_constraintHorizontal_bias="0.344"
+            app:layout_constraintStart_toEndOf="@+id/imgDetUser"
+            app:layout_constraintTop_toBottomOf="@+id/lblFollowing" />
+
+        <TextView
+            android:id="@+id/tvDetFollowers"
+            style="@style/nomor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/jmlFollowers"
+            app:layout_constraintEnd_toEndOf="@+id/lblFollowers"
+            app:layout_constraintStart_toStartOf="@+id/lblFollowers"
+            app:layout_constraintTop_toBottomOf="@+id/lblFollowers" />
+
+        <TextView
+            android:id="@+id/tvDetRepository"
+            style="@style/nomor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/jmlRepository"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvDetFollowers"
+            app:layout_constraintTop_toBottomOf="@+id/lblRepository" />
+
+        <TextView
+            android:id="@+id/tvDetCompany"
+            style="@style/Detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/perusahaan"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgDetUser" />
+
+        <TextView
+            android:id="@+id/tvDetLocation"
+            style="@style/lokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/lokasi"
+            app:layout_constraintStart_toStartOf="@+id/tvDetCompany"
+            app:layout_constraintTop_toBottomOf="@+id/tvDetCompany" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tlConnection"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDetLocation">
+
+        </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vpConnectionList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tlConnection" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabDetUser"
+        style="@style/backgroundBtnFav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:clickable="true"
+        android:contentDescription="@string/fabdetuserfavorite"
+        android:focusable="true"
+        android:src="@drawable/ic_unfavred"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/pbDetUser"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/tlConnection"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

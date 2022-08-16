@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SplashScreenText">
+        <item name="fontFamily">@font/heading</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="Det_nama">
+        <item name="fontFamily">@font/heading</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Detail">
+        <item name="fontFamily">@font/sub_heading</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="nomor">
+        <item name="fontFamily">@font/number</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="lokasi">
+        <item name = "fontFamily">@font/sub_heading</item>
+        <item name="fontStyle">italic</item>
+        <item name="android:textColor">@color/purple_500</item>
+    </style>
+    
+    <style name="backgroundBtnFav">
+        <item name="android:backgroundTint">@color/pastelBlue</item>
+    </style>
+
+    <style name="loveBtn">
+        <item name="android:backgroundTint">@android:color/transparent</item>
+    </style>
+</resources>

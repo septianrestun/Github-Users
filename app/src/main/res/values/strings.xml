@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Github Users</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="ketikan_username">ketikan username</string>
+    <string name="txtUsername">Septian Restu Nugroho</string>
+    <string name="detai_user_picture">Detai User Picture</string>
+    <string name="DetailName">Septian Restu Nugroho</string>
+    <string name="DetailUsername">septianrestun</string>
+    <string name="DetailFollowers">Followers</string>
+    <string name="DetailFollowing">Following</string>
+    <string name="DetailRepository">Repository</string>
+    <string name="jmlFollowing">%d</string>
+    <string name="jmlFollowers">%d</string>
+    <string name="jmlRepository">%d</string>
+    <string name="perusahaan">Perusahaan</string>
+    <string name="lokasi">Lokasi</string>
+    <string name="fabdetuserfavorite">fabDetUserFavorite</string>
+    <string name="lblFamousUser">Famous User</string>
+    <string name="lblfamous_user">Famous User</string>
+    <string name="tabFollowers">Followers</string>
+    <string name="tabFollowing">Following</string>
+    <string name="list_favoritemu_kosong">List Favoritemu Kosong</string>
+    <string name="menu_favorites">menu favorites</string>
+    <string name="mode_menu">mode menu</string>
+</resources>

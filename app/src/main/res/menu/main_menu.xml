@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/ketikan_username"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/menu_fav"
+        android:icon="@drawable/ic_favred"
+        android:title="@string/menu_favorites"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/menu_mode"
+        android:icon="@drawable/ic_day"
+        android:title="@string/mode_menu"
+        app:showAsAction="ifRoom"
+        />
+</menu>
